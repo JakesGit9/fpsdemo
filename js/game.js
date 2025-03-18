@@ -10,8 +10,8 @@ function init() {
 
   // Set up camera
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.set(0, 10, 20);
-  camera.lookAt(0, 5, 0);
+  camera.position.set(0, 10, 20);  // Adjust this position to ensure it's behind the car
+  camera.lookAt(0, 5, 0);  // Look at the center of the scene (you may need to adjust the Y and Z values here)
 
   // Set up renderer
   renderer = new THREE.WebGLRenderer();
